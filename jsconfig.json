@@ -1,15 +1,15 @@
 {
     "compilerOptions": {
-        "baseUrl": ".",
+        "baseUrl": "app",
         "paths": {
-            "@icons/*"     : ["app/assets/icons/*"],
-            "@images/*"    : ["app/assets/images/*"],
-            "@components/*": ["app/components/*"],
-            "@helpers/*"   : ["app/helpers/*"],
-            "@hooks/*"     : ["app/hooks/*"],
-			"@screens/*"   : ["app/screens/*"],
-			"@actions/*"   : ["app/store/actions/*"],
-			"@config/*"    : ["app/config/*"]
+            "@icons/*"     : ["assets/icons/*"],
+            "@images/*"    : ["assets/images/*"],
+            "@components/*": ["components/*"],
+            "@helpers/*"   : ["helpers/*"],
+            "@hooks/*"     : ["hooks/*"],
+			"@screens/*"   : ["screens/*"],
+			"@actions/*"   : ["store/actions/*"],
+			"@config/*"    : ["config/*"]
         }
 	},
 }
