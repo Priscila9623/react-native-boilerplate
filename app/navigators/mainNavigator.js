@@ -1,21 +1,23 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
+import StackNavigatorTemplate from '@components/navigators/StackNavigator';
 import HomeScreen from '@screens/home';
 import AboutScreen from '@screens/about';
 
-const Stack = createStackNavigator();
-
 const MainNavigator = () => {
+
+	const screenList = [{
+		name: 'Home',
+		component: HomeScreen,
+	},{
+		name: 'About',
+		component: AboutScreen,
+	}];
+
 	return (
-		<Stack.Navigator
-			initialRouteName="Home"
-			screenOptions={{
-				headerShown: false,
-			}}
-		>
-			<Stack.Screen name="Home" component={HomeScreen} />
-			<Stack.Screen name="About" component={AboutScreen} />
-		</Stack.Navigator>
+		<StackNavigatorTemplate
+			initialRouteName={screenList[0].name}
+			screens={screenList}
+		/>
 	);
 };
 
