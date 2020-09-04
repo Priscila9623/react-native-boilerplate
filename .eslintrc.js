@@ -30,6 +30,7 @@ module.exports = {
 					  "@screens/*"   : "app/screens/*",
 					  "@actions/*"   : "app/store/actions/*",
 					  "@config/*"    : "app/config/*",
+					  "@navigators/*": "app/navigators/*",
 				  }
 			  }
 		  }
