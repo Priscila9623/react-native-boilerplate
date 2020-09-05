@@ -42,9 +42,21 @@ npm run upgradeVersion
 yarn upgradeVersion
 ```
 
+## Splash screen settings
+To custom the splash screen **image** you can change it in the next path
+> android\app\src\main\res\drawable\logo.png
+
+
+To custom the splash screen **background color** edit the next file
+> android\app\src\main\res\layout\launch_screen.xml
+
+Then edit this line by adding your favorite color
+```android:background="#34495e"```
+
 ## Learn more
 
 To learn more about dependencies used in this project read: 
 
 * [React navigation](https://reactnavigation.org/docs/getting-started) - react navigation.
 * [Enviroment variables](https://github.com/luggit/react-native-config) - react-native-config.
+* [Splash screen](https://github.com/crazycodeboy/react-native-splash-screen) - react-native-splash-screen.
