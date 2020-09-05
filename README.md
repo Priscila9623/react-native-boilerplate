@@ -10,6 +10,7 @@ This is a react native boilerplate for Android which brings pre-configurations s
 * React navigation config in it´s 5 version.
 * Enviroment variables for react native.
 * Redux config.
+* Splash screen.
 
 > **Note:** Is necessary to create a new file __.env__ in the root for try it out enviroment variables, for help checkout the .env.example file
 
