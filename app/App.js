@@ -2,13 +2,13 @@ import 'react-native-gesture-handler';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { LogBox } from 'react-native';
-import Splash from './screens/splash';
+import MainNavigator from './navigators/stackNavigator';
 
 LogBox.ignoreAllLogs();
 const App = () => {
 	return (
 		<NavigationContainer>
-			<Splash />
+			<MainNavigator />
 		</NavigationContainer>
 	);
 };

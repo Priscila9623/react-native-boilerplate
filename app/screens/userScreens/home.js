@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Button } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import SvgImage from '@icons/example.svg';
-import { fonts } from '@config/fonts';
+import { fonts } from '@config/style';
 import Config from "react-native-config";
 
 const HomeScreen = ({ navigation }) => {
@@ -20,11 +20,18 @@ const HomeScreen = ({ navigation }) => {
 					priority: FastImage.priority.normal,
 				}}
 				resizeMode={FastImage.resizeMode.contain}
+				fallback
 			/>
-			<Button
-				title="About"
-				onPress={() => navigation.navigate('About')}
-			/>
+			<View style={{flexDirection: 'row', width: 200, justifyContent: 'space-around'}}>
+				<Button
+					title="About"
+					onPress={() => navigation.navigate('About')}
+				/>
+				<Button
+					title="Sign out"
+					onPress={() => navigation.goBack()}
+				/>
+			</View>
 		</View>
 	)
 };
