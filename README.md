@@ -12,7 +12,7 @@ This is a react native boilerplate for Android which brings pre-configurations s
 * Redux config.
 * Splash screen.
 
-> **Note:** Is necessary to create a new file __.env__ in the root for try it out enviroment variables, for help checkout the .env.example file
+> **Note:** It's necessary to create a new file __.env__ in the root for try it out enviroment variables, for help checkout the .env.example file
 
 ## Run boilerplate
 
@@ -53,6 +53,17 @@ To custom the splash screen **background color** edit the next file
 
 Then edit this line by adding your favorite color
 ```android:background="#34495e"```
+
+## Alias path
+- @icons
+- @images
+- @components
+- @helpers
+- @hooks
+- @screens
+- @actions
+- @config
+- @navigators
 
 ## Learn more
 
