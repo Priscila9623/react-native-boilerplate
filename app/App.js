@@ -1,9 +1,10 @@
-import 'react-native-gesture-handler';
-import React, {useEffect} from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import {useEffect} from 'react';
 import { LogBox } from 'react-native';
-import MainNavigator from './navigators/stackNavigator';
+
+import { NavigationContainer } from '@react-navigation/native';
 import SplashScreen from 'react-native-splash-screen';
+
+import MainNavigator from './navigators/stackNavigator';
 
 LogBox.ignoreAllLogs();
 const App = () => {

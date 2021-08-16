@@ -1,9 +1,11 @@
 import React from 'react';
+
 import { createStackNavigator } from '@react-navigation/stack';
+
 import { transitionSpecConfig, transitionConfig } from '@helpers/screens/stackNavigatorConfig';
-import commonScreens from './commonScreens';
-import userScreens from './userScreens';
+
 import authScreens from './authScreens';
+import userScreens from './userScreens';
 
 const Stack = createStackNavigator();
 
@@ -17,17 +19,17 @@ const StackNavigator = () => {
 			screenOptions={{
 				headerShown: false,
 				cardStyle: { backgroundColor: '#fff' },
-				gestureDirection: "horizontal",
+				gestureDirection: 'horizontal',
 				transitionSpec:{
 					close: transitionSpecConfig,
-					open: transitionSpecConfig,
+					open: transitionSpecConfig
 				},
-				cardStyleInterpolator: (props) => transitionConfig(props),
+				cardStyleInterpolator: (props) => transitionConfig(props)
 			}}
 		>
 			{Object.entries({
 				...userScreens,
-				...authScreens,
+				...authScreens
 				//...(isLoggedIn ? userScreens : authScreens),
 			}).map(([name, component]) => (
 				<Stack.Screen key={name} name={name} component={component} />

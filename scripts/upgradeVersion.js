@@ -1,6 +1,7 @@
+const ora = require('ora');
+
 const {replaceData} = require('./util');
 
-const ora = require('ora');
 
 const upgradeVersion = (()=>{
 
@@ -38,14 +39,14 @@ const upgradeVersion = (()=>{
 				contenido:[
 					{
 						oldText:`versionCode: ${versionCode}`,
-						newText:`versionCode: ${newVersionCode}`,
+						newText:`versionCode: ${newVersionCode}`
 					},
 					{
 						oldText:`versionName: '${versionName}'`,
-						newText:`versionName: '${newVersionName}'`,
-					},
+						newText:`versionName: '${newVersionName}'`
+					}
 
-				],
+				]
 			});
 
 			const resBuildGraddleApp = replaceData({
@@ -53,14 +54,14 @@ const upgradeVersion = (()=>{
 				contenido:[
 					{
 						oldText:`versionCode ${versionCode}`,
-						newText:`versionCode ${newVersionCode}`,
+						newText:`versionCode ${newVersionCode}`
 					},
 					{
 						oldText:`versionName "${versionName}"`,
-						newText:`versionName "${newVersionName}"`,
-					},
+						newText:`versionName "${newVersionName}"`
+					}
 
-				],
+				]
 			});
 
 			await Promise.all([resBuildGraddleApp, resGeneral]);

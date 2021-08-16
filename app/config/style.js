@@ -1,12 +1,12 @@
 const fonts = {
-	WorkSansRegular: 'WorkSans-Regular',
+	WorkSansRegular: 'WorkSans-Regular'
 };
 
 const colors = {
-	DarkGray: '#5F5F5F',
+	DarkGray: '#5F5F5F'
 };
 
 export {
 	fonts,
-	colors,
-}
+	colors
+};

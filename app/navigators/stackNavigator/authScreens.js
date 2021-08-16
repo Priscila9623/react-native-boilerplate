@@ -1,7 +1,7 @@
 import LoginScreen from '@screens/authScreens/login';
 
 const authScreens = {
-	Login: LoginScreen,
+	Login: LoginScreen
 };
 
 export default authScreens;
