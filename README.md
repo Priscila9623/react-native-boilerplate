@@ -16,9 +16,11 @@ This is a react native boilerplate for Android which brings pre-configurations s
 - Environment variables for react native.
 - Splash screen.
 
-> **Note:** It's necessary to create a new file **.env** in the root for try it out environment variables, for help checkout the .env.example file
+> [!IMPORTANT] 
+> It's necessary to create a new file **.env** in the root for try it out environment variables
 
-> **Note:** If you add variables to your **.env** file, remember to add its type to `environment.d.ts` to keep type safety
+> [!TIP] 
+> If you add variables to your **.env** file, remember to add its type to `environment.d.ts` to keep type safety
 
 # Scripts
 
