@@ -1,3 +1,10 @@
 module.exports = {
-	assets: ['app/assets/fonts']
+    project: {
+        ios: {},
+        android: {},
+    },
+    assets: ['./app/assets/fonts'],
+    env:{
+        envFromSystem: true
+    }
 };

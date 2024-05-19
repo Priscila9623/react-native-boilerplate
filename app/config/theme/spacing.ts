@@ -1,0 +1,9 @@
+export const zero = 0
+export const xxxs = 1
+export const xxs = 5
+export const xs = 10
+export const sm = 16
+export const md = 20
+export const lg = 30
+export const xl = 40
+export const xxl = 50
