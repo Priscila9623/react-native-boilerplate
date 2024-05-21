@@ -113,14 +113,12 @@ const FontFiles = {
 This includes some util styles as
 
 - Typography
-
   - align
   - color
   - h1: `30px` with font weight `bold`
   - h2: `24px` with font weight `bold`
   - h3: `20px` with font weight `bold`
   - body
-
     - xl: `20px`
     - lg: `18px`
     - md: `16px`
@@ -132,7 +130,6 @@ This includes some util styles as
 
 - Colors
 - Margins and Paddings with the following sizes:
-
   - xxl: `50px`
   - xl: `40px`
   - lg: `30px`
@@ -144,7 +141,6 @@ This includes some util styles as
   - zero: `0px`
 
   Each size has the following prefixes:
-
   - `v_`: vertical. Applies to `Top` and `bottom`
   - `h_`: horizontal. Applies to `Left` and `Right`
   - `t_`: top
@@ -161,7 +157,6 @@ This includes some util styles as
   - justifyBetween
   - alignCenter
   - textCenter
-  - widthFull
   - widthFull
   - widthHalf
   - heightFull
